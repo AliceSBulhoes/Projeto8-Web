@@ -2,9 +2,7 @@ let tarefas = []
 
 function validaCampo(){
     let valida = false;
-    if(document.getElementById("task").value == ""){
-        valida = true;
-    }
+    if(document.getElementById("task").value == "") valida = true;
     return valida
 }
 
@@ -26,4 +24,9 @@ function listarTarefas(){
         valor += tarefas[i] + "<br>";
     }
     document.getElementById("lista").innerHTML = valor;
+}
+
+function removerTarefa(){
+    tarefas.pop();
+    listarTarefas();
 }
