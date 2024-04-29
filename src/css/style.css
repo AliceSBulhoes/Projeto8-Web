@@ -62,6 +62,9 @@ ul{
     font-size: 24px;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.132);
 }
+p{
+    font-weight: 600;
+}
 #botoes{
     display: flex;
     gap: 2em;
@@ -75,9 +78,11 @@ ul{
     background-color: #86A69D;
     transition: 1s ease;
     cursor: pointer;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.357);
 }
 button:hover{
     transform: scale(1.2);
     font-weight: 500;
     transition: 1s ease;
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.357);
 }

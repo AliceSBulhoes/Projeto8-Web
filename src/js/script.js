@@ -1,3 +1,4 @@
+let tarefas = []
 
 function validaCampo(){
     let valida = false;
@@ -12,7 +13,7 @@ function adicionarTarefa(){
     if(validaCampo){
         alert("Preencha o Campo com a tarefa");
     }else{
-        tarefas.push(linhas.values);
+        tarefas.push(linhas.value);
         linhas.value = "";
         listarTarefas();
     }
@@ -20,5 +21,9 @@ function adicionarTarefa(){
 }
 
 function listarTarefas(){
-    
+    let valor = "";
+    for(let i = 0; i < tarefas.lenght; i++){
+        valor += tarefas[i] + "<br>";
+    }
+    document.getElementById("lista").innerHTML = valor;
 }
