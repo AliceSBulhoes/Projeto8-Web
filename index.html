@@ -8,7 +8,7 @@
 </head>
 <body>
     <header id="menu">
-        <img src="" alt="logo">
+        <img src="./src/assets/logo.png" alt="logo" id="logo">
         <nav id="menu_nav">
             <ul>
                 <li><a href="">Home</a></li>
@@ -18,15 +18,19 @@
             </ul>
         </nav>
     </header>
-    <section>
-        <h1>Lista de Tarefas</h1>
-        <p>
-            <label for="task">Tarefa:</label>
-            <input type="text" id="task" size="30px">
-        </p>
-        <button id="btnAdicionar" onclick="adicionarTarefa()">Adicionar Tarefa</button>
-        <button id="btnRemover" onclick="removerTarefa()">Remover Tarefa</button>
-        <p id="lista"></p>
+    <section id="secao_lista">
+        <div id="secao_div">
+            <h1>Lista de Tarefas</h1>
+            <p>
+                <label for="task">Tarefa:</label>
+                <input type="text" id="task" size="30px">
+            </p>
+            <div id="botoes">
+                <button id="btnAdicionar" onclick="adicionarTarefa()">Adicionar Tarefa</button>
+                <button id="btnRemover" onclick="removerTarefa()">Remover Tarefa</button>
+            </div>
+            <p id="lista"></p>
+        </div>
     </section>
     <script src="./src/js/script.js"></script>
 </body>

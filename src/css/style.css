@@ -21,9 +21,63 @@ ul li a{
     list-style: none;
     text-decoration: none;
     text-transform: uppercase;
+    color: #ffbc6a;
+    font-size: 18px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.354);
+}
+li{
+    transition: 1s ease;
+}
+li:hover, a:hover{
+    transform: scale(1.2);
+    color: #F2E8DF;
+    transition: 1s ease;
 }
 ul{
     display: flex;
-    
+    gap: 2em;
+    list-style: none;
 }
-
+#logo{
+    height: 40px;
+}
+#secao_lista{
+    display: flex;
+    justify-content: center;
+}
+#secao_div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    border-radius: 70px;
+    height: 70vh;
+    gap: 1em;
+    margin: 20px;
+    background-color: #ffbc6a;
+}
+#secao_div h1, p{
+    color: #53736A;
+    font-size: 24px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.132);
+}
+#botoes{
+    display: flex;
+    gap: 2em;
+}
+#botoes button{
+    padding: 10px 12px;
+    border-radius: 14px;
+    border: none;
+    color: #F2E8DF;
+    font-size: 17px;
+    background-color: #86A69D;
+    transition: 1s ease;
+    cursor: pointer;
+}
+button:hover{
+    transform: scale(1.2);
+    font-weight: 500;
+    transition: 1s ease;
+}
